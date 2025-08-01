@@ -75,7 +75,7 @@ footer {
 /* Reset + body styling */
 body {
   margin: 0;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f8f8f8;
   color: #333;
   line-height: 1.6;
@@ -95,7 +95,7 @@ nav .brand {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* BUTTONS on right */
@@ -112,7 +112,7 @@ nav .brand {
   font-weight: bold;
   border-radius: 30px;
   font-size: 1.2rem;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -129,7 +129,7 @@ main {
 }
 
 h1, h2 {
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: #444;
 }
