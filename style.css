@@ -64,3 +64,102 @@ footer {
   border-radius: 6px;
   margin-bottom: 0.5rem;
 }
+
+/* Import font (if hosted locally or via web, like Adobe Fonts, update this) */
+@font-face {
+  font-family: 'Acumin Pro';
+  src: local('Acumin Pro Bold'), local('Acumin Pro'), sans-serif;
+  font-weight: bold;
+}
+
+/* Reset + body styling */
+body {
+  margin: 0;
+  font-family: 'Acumin Pro', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 1rem 2rem;
+}
+
+/* NAME on left */
+nav .brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Acumin Pro', sans-serif;
+}
+
+/* BUTTONS on right */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-button {
+  padding: 0.75rem 1.75rem;
+  background-color: #fff099;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-family: 'Acumin Pro', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  background-color: #ffe956;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* GENERAL PAGE STYLES */
+main {
+  padding: 2rem;
+}
+
+h1, h2 {
+  font-family: 'Acumin Pro', sans-serif;
+  font-size: 2rem;
+  color: #444;
+}
+
+/* GALLERY STYLING */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.piece {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.piece img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ddd;
+}
+
