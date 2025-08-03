@@ -189,11 +189,13 @@ footer {
   color: #333;
 }
 
-.about-image {
-  flex: 1;
-  max-width: 50%;
-  /* You'll add your image here later */
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px; /* optional: gives it rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
 }
+
 
 .chat-button {
   align-self: center; /* Center the button horizontally */
