@@ -75,10 +75,12 @@ h1, h2 {
 /* ABOUT SECTION */
 .about-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* vertically center image and text */
   justify-content: space-between;
-  padding: 1rem 4rem 2rem 4rem; /* Top padding is now just 1rem */
+  padding: 1rem 4rem 2rem 4rem;
+  min-height: 80vh; /* ensures the section is tall enough */
 }
+
 
 
 
@@ -104,12 +106,12 @@ h1, h2 {
 
 /* ABOUT IMAGE */
 .about-image img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-height: 80vh; /* fills 80% of the viewport height */
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  object-fit: cover;
 }
 
 .about-image img:hover {
