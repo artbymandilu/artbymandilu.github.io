@@ -96,6 +96,15 @@ h1, h2 {
   margin: 0; /* Remove any default top/bottom margin */
 }
 
+.contact-heading {
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: #e6db7a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.6;
