@@ -94,7 +94,7 @@ h1, h2 {
   font-size: clamp(4rem, 10vw, 8rem);
   color: #e6db7a;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-text p {
