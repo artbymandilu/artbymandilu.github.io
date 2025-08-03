@@ -59,16 +59,15 @@ nav .brand {
 .about-container {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start; /* Align content left */
   padding: 4rem 2rem;
-  gap: 4rem; /* Gap between text and image */
-  flex-wrap: wrap;
+  gap: 4rem;
+  flex-wrap: nowrap; /* Prevent wrapping so heading stays on one line */
 }
-
 .about-text {
-  flex: 0 0 35%;
-  max-width: 35%;
-  margin-right: 2rem;
+   flex: 0 0 auto;      /* Don't shrink */
+  max-width: 50%;      /* Give text half the container width */
+  margin-right: 2rem;  /* Space between text and image */
 }
 
 .about-text h1 {
@@ -98,6 +97,11 @@ nav .brand {
   object-fit: cover;
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+.about-image {
+  flex: 0 0 auto;      /* Prevent shrinking */
+  max-width: 40%;      /* Image on right takes about 40% width */
 }
 
 .about-image img:hover {
@@ -252,3 +256,36 @@ footer {
 .form-button:hover {
   background-color: #555;
 }
+
+/* Ensure transition applies to transform and color smoothly on hover */
+.about-text h1 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-text h1:hover {
+  transform: scale(1.05);
+  /* Optional: also change color slightly on hover */
+  /* color: #fff299; */
+}
+
+.about-image img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(230, 219, 129, 0.3); /* subtle glow on hover */
+}
+
+.chat-button {
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #e6db81;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(230, 219, 129, 0.4);
+}
+
