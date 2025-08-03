@@ -61,14 +61,16 @@ nav .brand {
   align-items: flex-start;
   justify-content: center;
   padding: 4rem 2rem;
-  gap: 3rem;
+  gap: 4rem; /* Increased gap between text and image */
   flex-wrap: wrap;
 }
 
 .about-text {
-  flex: 0 0 40%;
-  max-width: 40%;
+  flex: 0 0 35%;  /* Reduced from 40% to 35% */
+  max-width: 35%;
+  margin-right: 2rem; /* Add some right margin for extra spacing */
 }
+
 
 .about-image img {
   max-height: 80vh;
