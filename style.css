@@ -59,83 +59,46 @@ nav .brand {
 .about-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: 4rem;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .about-text {
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 2rem; /* This resets it so it's lower and no longer aligned with image */
-}
-
-.about-text h1 {
-  font-size: clamp(4rem, 10vw, 8rem);
-  color: #e6db7a;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.contact-heading {
-  text-align: center;
-  font-size: clamp(4rem, 10vw, 8rem);
-  color: #e6db7a;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-/* IMAGE STYLING */
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 
 .about-image img {
-  max-height: 100vh;
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  max-height: 80vh;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.about-image img:hover {
-  transform: scale(1.02);
+.about-text h1 {
+  font-size: 4rem;
+  color: #fff099;
+  margin-bottom: 2rem;
 }
 
-/* CHAT BUTTON */
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .chat-button {
-  align-self: center;
   display: inline-block;
   background-color: #fff099;
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  padding: 1.25rem 2.5rem;
-  border: none;
-  border-radius: 40px;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 30px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  font-size: 1.1rem;
   margin-top: 2rem;
-}
-
-.chat-button:hover {
-  background-color: #e6db81;
-  transform: scale(1.05);
 }
 
 /* CONTACT PAGE HEADING */
