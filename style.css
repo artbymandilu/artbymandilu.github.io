@@ -77,8 +77,9 @@ h1, h2 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 2rem 4rem 2rem 4rem; /* Top/Bottom reduced */
+  padding: 1rem 4rem 2rem 4rem; /* Top padding is now just 1rem */
 }
+
 
 
 .about-text {
