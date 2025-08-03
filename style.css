@@ -119,7 +119,9 @@ nav .brand {
   font-weight: 700;
   margin-bottom: 1rem;
   padding: 4rem 4rem 0 4rem;
+  text-align: center;  /* Added to center the heading */
 }
+
 
 /* GALLERY (if used elsewhere) */
 .gallery {
