@@ -194,3 +194,30 @@ footer {
   max-width: 50%;
   /* You'll add your image here later */
 }
+
+.chat-button {
+  align-self: center; /* Center the button horizontally */
+  display: inline-block;
+  background-color: #fff099;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem; /* Made bigger */
+  padding: 1.25rem 2.5rem; /* More padding for larger size */
+  border: none;
+  border-radius: 40px; /* Slightly more rounded */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 2rem;
+}
+
+.chat-button:hover {
+  background-color: #e6db81;
+  transform: scale(1.05);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Keep paragraph text left-aligned */
+}
