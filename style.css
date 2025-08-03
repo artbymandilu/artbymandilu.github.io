@@ -61,36 +61,28 @@ nav .brand {
   align-items: flex-start;
   justify-content: center;
   padding: 4rem 2rem;
-  gap: 4rem; /* Increased gap between text and image */
+  gap: 4rem; /* Gap between text and image */
   flex-wrap: wrap;
 }
 
-/* UPDATED About Me heading */
+.about-text {
+  flex: 0 0 35%;
+  max-width: 35%;
+  margin-right: 2rem;
+}
+
 .about-text h1 {
   font-size: clamp(4rem, 10vw, 8rem);
-  color: #e6db7a; /* Darker yellow */
+  color: #e6db7a;  /* Dark yellow */
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 2rem;
   transition: transform 0.3s ease;
-  cursor: pointer; /* changes cursor to pointer on hover */
+  cursor: pointer;
 }
 
 .about-text h1:hover {
   transform: scale(1.05);
-}
-
-.about-text {
-  flex: 0 0 35%;  /* Reduced from 40% to 35% */
-  max-width: 35%;
-  margin-right: 2rem; /* Add some right margin for extra spacing */
-}
-
-.about-image img {
-  max-height: 80vh;
-  width: auto;
-  border-radius: 10px;
-  object-fit: cover;
 }
 
 .about-text p {
@@ -99,6 +91,20 @@ nav .brand {
   line-height: 1.6;
 }
 
+.about-image img {
+  max-height: 80vh;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Let’s Chat button */
 .chat-button {
   display: inline-block;
   background-color: #fff099;
@@ -109,6 +115,13 @@ nav .brand {
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #e6db81;
+  transform: scale(1.05);
 }
 
 /* CONTACT PAGE HEADING */
@@ -119,9 +132,8 @@ nav .brand {
   font-weight: 700;
   margin-bottom: 1rem;
   padding: 4rem 4rem 0 4rem;
-  text-align: center;  /* Added to center the heading */
+  text-align: center;  /* Centered text */
 }
-
 
 /* GALLERY (if used elsewhere) */
 .gallery {
