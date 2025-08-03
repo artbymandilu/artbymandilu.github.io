@@ -65,9 +65,10 @@ nav .brand {
   flex-wrap: wrap;
 }
 
+/* UPDATED About Me heading */
 .about-text h1 {
   font-size: clamp(4rem, 10vw, 8rem);
-  color: #fff099;
+  color: #e6db7a; /* Darker yellow */
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -85,18 +86,11 @@ nav .brand {
   margin-right: 2rem; /* Add some right margin for extra spacing */
 }
 
-
 .about-image img {
   max-height: 80vh;
   width: auto;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.about-text h1 {
-  font-size: 4rem;
-  color: #fff099;
-  margin-bottom: 2rem;
 }
 
 .about-text p {
