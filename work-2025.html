@@ -155,12 +155,13 @@
 <!-- JavaScript -->
 <script>
   function openLightbox(id) {
-    document.getElementById(`lightbox-${id}`).style.display = 'flex';
-  }
+  document.getElementById(`lightbox-${id}`).classList.add('show');
+}
 
-  function closeLightbox(id) {
-    document.getElementById(`lightbox-${id}`).style.display = 'none';
-  }
+function closeLightbox(id) {
+  document.getElementById(`lightbox-${id}`).classList.remove('show');
+}
+
 </script>
 </body>
 </html>
