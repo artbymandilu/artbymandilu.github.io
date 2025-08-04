@@ -407,3 +407,64 @@ nav .brand {
     padding: 2rem 2rem 0 2rem;
   }
 }
+
+/* CONTACT FORM */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 70vh;
+}
+
+.contact-form {
+  background-color: #fff099;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  resize: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e6db81;
+}
+
+.form-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #555;
+}
