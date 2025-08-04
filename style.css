@@ -136,9 +136,7 @@ nav .brand {
   font-weight: 700;
   margin-bottom: 1rem;
   padding: 4rem 4rem 0 4rem;
-  text-align: center;  /* Centered text */
-}
-
+  text-align: center;
   
   /* Typing animation styles */
   white-space: nowrap;       /* Keep text in one line */
@@ -160,6 +158,8 @@ nav .brand {
   0%, 100% { border-color: transparent }
   50% { border-color: #e6db7a }
 }
+
+
 
 
 /* GALLERY (if used elsewhere) */
