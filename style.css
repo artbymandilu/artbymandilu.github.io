@@ -27,8 +27,8 @@ nav {
 nav .brand {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
   color: #333;
+  /* Removed redundant font-family here */
 }
 
 .nav-links {
@@ -44,7 +44,7 @@ nav .brand {
   font-weight: bold;
   border-radius: 30px;
   font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
+  /* Removed redundant font-family here */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -53,6 +53,7 @@ nav .brand {
 .nav-button.active {
   background-color: #ffe956;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* ABOUT PAGE LAYOUT */
@@ -73,7 +74,6 @@ nav .brand {
 .about-text h1 {
   font-size: clamp(4rem, 10vw, 8rem);
   color: #e6db7a;  /* Dark yellow */
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 2rem;
   transition: transform 0.3s ease;
@@ -132,7 +132,6 @@ nav .brand {
 .contact-heading {
   font-size: clamp(4rem, 10vw, 8rem);
   color: #e6db7a;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
   padding-top: 4rem;
@@ -164,8 +163,6 @@ nav .brand {
   0%, 100% { border-color: transparent }
   50% { border-color: #e6db7a }
 }
-
-
 
 
 /* GALLERY (if used elsewhere) */
@@ -242,7 +239,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  font-family: 'Montserrat', sans-serif;
+  /* Removed redundant font-family */
 }
 
 .contact-form label {
@@ -257,7 +254,6 @@ footer {
   border: none;
   border-radius: 10px;
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: #333;
   resize: none;
@@ -327,7 +323,7 @@ footer {
   border-radius: 12px;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  z-index: 1;
+  z-index: 1000; /* Increased z-index for stacking context */
   text-align: left;
   padding: 0.5rem 0;
 
