@@ -127,4 +127,202 @@ nav .brand {
   transform: scale(1.05);
 }
 
-/* CONTACT PAGE HEADING*
+/* CONTACT PAGE HEADING */
+.contact-heading {
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: #e6db7a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #e6db7a;
+  width: 15ch;
+  animation: typing 2.5s steps(10, end), blink-caret 0.75s step-end infinite;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+/* Typing keyframes */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15ch }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: #e6db7a }
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.piece {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.piece img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ddd;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .about-text,
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-image {
+    margin-top: 2rem;
+  }
+
+  .chat-button {
+    align-self: center;
+  }
+
+  .contact-heading {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+
+/* CONTACT FORM */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 70vh;
+}
+
+.contact-form {
+  background-color: #fff099;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  resize: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e6db81;
+}
+
+.form-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #555;
+}
+
+/* h1 transition refinement */
+.about-text h1 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-text h1:hover {
+  transform: scale(1.05);
+}
+
+.about-image img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(230, 219, 129, 0.3);
+}
+
+.chat-button {
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #e6db81;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(230, 219, 129, 0.4);
+}
+
+/* DROPDOWN MENU */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff099;
+  border-radius: 12px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1000;
+  text-align: left;
+  padding: 0.5rem 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
