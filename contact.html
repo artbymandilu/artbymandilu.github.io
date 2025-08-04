@@ -5,6 +5,85 @@
   <title>Contact Me | Mandi Lu</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: white;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav-button {
+      text-decoration: none;
+      color: black;
+      background-color: #fff099;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #ffe956;
+      transform: scale(1.05);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff099;
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      max-height: 200px;
+    }
+
+    .dropdown-content a {
+      padding: 1rem 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe956;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,8 +91,14 @@
   <nav>
     <div class="brand">Mandi Lu</div>
     <div class="nav-links">
+      <div class="dropdown">
+        <a href="work-2025.html" class="nav-button">My Work</a>
+        <div class="dropdown-content">
+          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2026.html">2026</a>
+        </div>
+      </div>
       <a href="index.html" class="nav-button">About</a>
-      <a href="work.html" class="nav-button">My Work</a>
       <a href="contact.html" class="nav-button active">Contact</a>
     </div>
   </nav>
