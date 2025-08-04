@@ -20,8 +20,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f1f1f1; /* updated from #eee */
+  background-color: #f1f1f1; /* consistent light gray background */
   padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
 }
 
 nav .brand {
@@ -33,25 +35,31 @@ nav .brand {
 .nav-links {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
+/* Nav buttons - consistent size and shape */
 .nav-button {
   padding: 0.75rem 1.75rem;
   background-color: #fff099;
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 30px; /* ensure round shape */
+  border-radius: 30px; /* round shape */
   font-size: 1.2rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: inline-block; /* prevent shrinking */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  /* Fix shrinking: keep consistent box model */
+  box-sizing: border-box;
 }
 
+/* Hover and active states */
 .nav-button:hover,
 .nav-button.active {
   background-color: #ffe956;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transform: none; /* prevent shrinking */
 }
 
 /* DROPDOWN MENU */
@@ -75,15 +83,32 @@ nav .brand {
   opacity: 0;
   transform: translateY(-10px);
   transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
 }
 
 .dropdown:hover .dropdown-content {
   max-height: 200px;
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-content a {
+  padding: 1rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffe956;
 }
 
 /* --- Everything below remains unchanged --- */
+
 /* ABOUT PAGE LAYOUT */
 .about-container {
   display: flex;
@@ -93,6 +118,7 @@ nav .brand {
   gap: 4rem;
   flex-wrap: nowrap;
 }
+
 .about-text {
   flex: 0 0 auto;
   max-width: 50%;
@@ -134,6 +160,7 @@ nav .brand {
 
 .about-image img:hover {
   transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(230, 219, 129, 0.3);
 }
 
 /* Let’s Chat button */
@@ -147,13 +174,14 @@ nav .brand {
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 2rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .chat-button:hover {
   background-color: #e6db81;
   transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(230, 219, 129, 0.4);
 }
 
 /* CONTACT PAGE HEADING */
@@ -299,34 +327,4 @@ footer {
 
 .form-button:hover {
   background-color: #555;
-}
-
-/* h1 transition refinement */
-.about-text h1 {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.about-text h1:hover {
-  transform: scale(1.05);
-}
-
-.about-image img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.about-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(230, 219, 129, 0.3);
-}
-
-.chat-button {
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.chat-button:hover {
-  background-color: #e6db81;
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(230, 219, 129, 0.4);
 }
