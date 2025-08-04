@@ -135,17 +135,23 @@ nav .brand {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
-  padding: 4rem 4rem 0 4rem;
-  text-align: center;
-  
+  padding-top: 4rem;
+
   /* Typing animation styles */
-  white-space: nowrap;       /* Keep text in one line */
-  overflow: hidden;          /* Hide overflow for animation */
-  border-right: 4px solid #e6db7a; /* Cursor */
-  width: 15ch;               /* Width based on number of characters */
-  
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #e6db7a;
+  width: 15ch;
+
   animation: typing 2.5s steps(10, end), blink-caret 0.75s step-end infinite;
+
+  /* Horizontally center it */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
 }
+
 
 /* Typing keyframes */
 @keyframes typing {
