@@ -5,37 +5,147 @@
   <title>My Work | Mandi Lu</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff099;
+      position: relative;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-button {
+      text-decoration: none;
+      color: black;
+      background-color: #fff099;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #ffe956;
+      transform: scale(1.05);
+    }
+
+    /* Dropdown Container */
+    .dropdown {
+      position: relative;
+    }
+
+    /* Dropdown Content */
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff099;
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Show on hover */
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      max-height: 200px;
+    }
+
+    /* Dropdown links */
+    .dropdown-content a {
+      padding: 1rem 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe956;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .piece {
+      max-width: 300px;
+    }
+
+    .piece img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .piece p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
- <nav>
-  <div class="brand">Your Brand</div>
-  <div class="nav-links">
-    <div class="dropdown">
-      <a href="#" class="nav-button">My Work</a>
-      <div class="dropdown-content">
-        <a href="work-2025.html">2025 & Earlier</a>
-        <a href="work-2026.html">2026</a>
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="brand">Mandi Lu</div>
+    <div class="nav-links">
+      <div class="dropdown">
+        <a href="work-2025.html" class="nav-button">My Work</a>
+        <div class="dropdown-content">
+          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2026.html">2026</a>
+        </div>
       </div>
+      <a href="about.html" class="nav-button">About</a>
+      <a href="contact.html" class="nav-button">Contact</a>
     </div>
-    <a href="about.html" class="nav-button">About</a>
-    <a href="contact.html" class="nav-button">Contact</a>
-  </div>
-</nav>
+  </nav>
 
-
-
-
+  <!-- MAIN CONTENT -->
   <main>
     <h1>My Work</h1>
     <div class="gallery">
-      <!-- Use your images later -->
+      <!-- Example project -->
       <div class="piece">
         <img src="images/still-life.jpg" alt="Still Life Painting" />
         <p><strong>Still Life Painting</strong><br>A gouache painting about femininity</p>
       </div>
-      <!-- Add more pieces here -->
+      <!-- Add more projects here -->
     </div>
   </main>
+
 </body>
 </html>
