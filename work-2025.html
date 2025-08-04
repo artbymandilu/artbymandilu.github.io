@@ -4,7 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Work – 2025 & Earlier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff099;
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav-button {
+      text-decoration: none;
+      color: black;
+      background-color: #fff099;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-button:hover {
+      background-color: #ffe956;
+      transform: scale(1.05);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-trigger {
+      text-decoration: none;
+      color: black;
+      background-color: #fff099;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .dropdown-trigger:hover {
+      background-color: #ffe956;
+      transform: scale(1.05);
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff099;
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      max-height: 200px;
+      pointer-events: auto;
+    }
+
+    .dropdown-content a {
+      padding: 1rem 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe956;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .piece {
+      max-width: 300px;
+    }
+
+    .piece img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .piece p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,9 +136,9 @@
     <div class="brand">Mandi Lu</div>
     <div class="nav-links">
       <div class="dropdown">
-        <a href="work-2025.html" class="nav-button active">My Work</a>
+        <a href="work-2025.html" class="dropdown-trigger">My Work</a>
         <div class="dropdown-content">
-          <a href="work-2025.html" class="active">2025 & Earlier</a>
+          <a href="work-2025.html">2025 & Earlier</a>
           <a href="work-2026.html">2026</a>
         </div>
       </div>
@@ -24,17 +147,17 @@
     </div>
   </nav>
 
+  <!-- MAIN CONTENT -->
   <main>
+    <h1>My Work – 2025 & Earlier</h1>
     <section class="gallery">
       <div class="piece">
-        <img src="images/art1.jpg" alt="Art Title" />
+        <img src="images/art1.jpg" alt="Art Title">
         <p>Title – Medium – Year</p>
       </div>
-      <!-- Add more pieces -->
+      <!-- Add more pieces here -->
     </section>
   </main>
-
-  <!-- Optional footer here -->
 
 </body>
 </html>
