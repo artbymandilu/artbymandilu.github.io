@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Work – 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
     /* Center the message both vertically and horizontally */
@@ -25,6 +26,81 @@
       text-align: center;
       padding: 1rem;
     }
+
+    /* NAVIGATION BAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f0f0f0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav-button {
+      text-decoration: none;
+      color: black;
+      background-color: #f0f0f0;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-button:hover {
+      background-color: #dcdcdc;
+      transform: scale(1.05);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      max-height: 200px;
+      pointer-events: auto;
+    }
+
+    .dropdown-content a {
+      padding: 1rem 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #dcdcdc;
+    }
   </style>
 </head>
 <body>
@@ -33,17 +109,16 @@
   <nav>
     <div class="brand">Mandi Lu</div>
     <div class="nav-links">
-  <a href="index.html" class="nav-button">About</a>
-  <div class="dropdown">
-    <a href="work-2025.html" class="nav-button">My Work</a>
-    <div class="dropdown-content">
-      <a href="work-2025.html">2025 & Earlier</a>
-      <a href="work-2026.html">2026</a>
+      <a href="index.html" class="nav-button">About</a>
+      <div class="dropdown">
+        <a href="work-2025.html" class="nav-button">My Work</a>
+        <div class="dropdown-content">
+          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2026.html">2026</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-button">Contact</a>
     </div>
-  </div>
-  <a href="contact.html" class="nav-button">Contact</a>
-</div>
-
   </nav>
 
   <main>
