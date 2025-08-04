@@ -358,13 +358,14 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #e6db7a; /* same as “About Me” on About page */
-  font-size: 4rem; /* around 2x your regular H1 */
+  color: #e6db7a; /* same color as "About Me" */
+  font-size: clamp(3rem, 8vw, 8rem); /* Responsive size: min 3rem, max 8rem */
   font-weight: bold;
   text-align: center;
-  z-index: 2;
-  margin: 0;
+  z-index: 3;
+  white-space: nowrap;
 }
+
 
 /* Ensure nav buttons and branding are on top of the image */
 nav .brand,
