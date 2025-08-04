@@ -117,17 +117,50 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT!!!!!!!!!!!!!!!!!!! -->
- <main>
+  <!-- MAIN CONTENT -->
+<main>
   <div class="banner-container">
     <img src="images/banner-2025.jpg" alt="Art Banner" class="banner-image" />
     <div class="banner-text">
       2025 & Earlier
     </div>
   </div>
+
+  <div class="gallery">
+    <div class="artwork" onclick="openLightbox('art1')">
+      <div class="art-image-container">
+        <img src="images/your-image-path.jpg" alt="Artwork Title">
+        <div class="hover-overlay"></div>
+      </div>
+      <div class="art-caption">
+        <strong>Artwork Title</strong><br>
+        12" x 18", Gouache on paper, 2025
+      </div>
+    </div>
+  </div>
 </main>
 
+<!-- Lightbox -->
+<div id="lightbox-art1" class="lightbox">
+  <div class="lightbox-content">
+    <img src="images/your-image-path.jpg" alt="Artwork Title">
+    <div class="lightbox-sidebar">
+      <h2>Artwork Title</h2>
+      <p>This piece is about...</p>
+    </div>
+    <span class="close-btn" onclick="closeLightbox('art1')">&times;</span>
+  </div>
+</div>
 
+<!-- JavaScript -->
+<script>
+  function openLightbox(id) {
+    document.getElementById(`lightbox-${id}`).style.display = 'flex';
+  }
 
+  function closeLightbox(id) {
+    document.getElementById(`lightbox-${id}`).style.display = 'none';
+  }
+</script>
 </body>
 </html>
