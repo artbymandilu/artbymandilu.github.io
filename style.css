@@ -245,10 +245,13 @@ nav .brand {
 }
 
 .art-image-container img {
-  width: 100%;
+  width: 80vw;
   height: auto;
+  object-fit: contain;
   display: block;
-  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
 }
 
 .hover-overlay {
