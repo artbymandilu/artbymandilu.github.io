@@ -374,3 +374,22 @@ nav .nav-button {
   z-index: 3;
 }
 
+/* Enlarged banner text and translucent background */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(4rem, 12vw, 10rem); /* Even bigger text */
+  font-weight: 700;
+  color: #e6db7a;
+  text-align: center;
+  padding: 1rem 2rem;
+  z-index: 3;
+  white-space: nowrap;
+  background-color: rgba(241, 241, 241, 0.7); /* translucent light grey */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
