@@ -261,13 +261,13 @@ nav .brand {
   margin: 0 auto;
 }
 
-
-
 .art-image-container.half-width img {
-  width: 100%; /* ensures image fills the container */
-  display: block; /* removes bottom whitespace */
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 12px;
 }
+
 
 }
 
