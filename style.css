@@ -271,6 +271,8 @@ nav .brand {
   display: block;
   border-radius: 10px;
   transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 /* Special class for Spirals (half-width) */
