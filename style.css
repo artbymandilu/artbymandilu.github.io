@@ -256,9 +256,13 @@ nav .brand {
 }
 
 .art-image-container.half-width {
-  width: 50vw;
-  margin: 0 auto; /* centers the container */
+  width: 50%;
+  margin: 0 auto; /* this centers the image horizontally */
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
 }
+
 
 .art-image-container.half-width img {
   width: 100%; /* ensures image fills the container */
