@@ -237,10 +237,15 @@ nav .brand {
 }
 
 .artwork {
-  width: 300px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   cursor: pointer;
   position: relative;
 }
+
+
 
 .art-image-container {
   position: relative;
