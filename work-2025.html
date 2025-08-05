@@ -138,10 +138,21 @@
  2024
       </div>
     </div>
+    <!--SPIRALS -->
+  <div class="artwork" onclick="openLightbox('art2')">
+    <div class="art-image-container half-width">
+      <img src="images/spirals.jpg" alt="Spirals">
+      <div class="hover-overlay"></div>
+    </div>
+    <div class="art-caption">
+      <strong>Spirals</strong><br>
+      9" x 12", Mixed Media on Paper, 2025
+    </div>
   </div>
+  </div> <!--end gallery -->
 </main>
 
-<!-- Lightbox -->
+<!-- Lightbox for nightlight-->
 <div id="lightbox-art1" class="lightbox">
   <div class="lightbox-content">
     <img src="images/cloud-light.png" alt="Cloud and Moon Nightlight">
@@ -156,6 +167,18 @@
   </div>
 </div>
 
+<!-- Lightbox for Spirals -->
+<div id="lightbox-art2" class="lightbox">
+  <div class="lightbox-content">
+    <img src="images/devlin.png" alt="Devlin Portrait">
+    <div class="lightbox-sidebar">
+      <h2>Devlin</h2>
+      <p>This portrait explores layered identity and emotional depth through the visual metaphor of spirals. The subject is caught in cycles of growth, reflection, and complexity.</p>
+    </div>
+    <span class="close-btn" onclick="closeLightbox('art2')">&times;</span>
+  </div>
+</div>
+  
 <!-- JavaScript -->
 <script>
   function openLightbox(id) {
