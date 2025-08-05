@@ -242,15 +242,19 @@ nav .brand {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+  text-align: center;   /* Ensures the image is centered */
+  width: 100%;          /* Make sure the container doesn’t restrict width */
 }
 
 .art-image-container img {
-  width: 80%;
+  width: 80vw;          /* 80% of the viewport width */
   height: auto;
-  object-fit: contain;
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
 }
+
 
 
 }
