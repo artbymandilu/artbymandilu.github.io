@@ -255,6 +255,18 @@ nav .brand {
   transition: opacity 0.3s ease;
 }
 
+.art-image-container.half-width {
+  width: 50vw;
+  margin: 0 auto; /* centers the container */
+}
+
+.art-image-container.half-width img {
+  width: 100%; /* ensures image fills the container */
+  display: block; /* removes bottom whitespace */
+  border-radius: 12px;
+}
+
+}
 
 
 }
