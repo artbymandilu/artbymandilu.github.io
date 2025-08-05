@@ -245,11 +245,15 @@ nav .brand {
 }
 
 .art-image-container img {
-  width: 80vw;
+  width: 80%;
   height: auto;
   object-fit: contain;
   display: block;
   margin: 0 auto;
+}
+
+.art-image-container img {
+  max-height: 90vh;
 }
 
 }
