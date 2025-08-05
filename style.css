@@ -287,6 +287,10 @@ nav .brand {
   z-index: 2;
 }
 
+.art-image-container:hover .hover-overlay {
+  opacity: 1;
+}
+
 .art-image-container:hover img {
   transform: scale(1.03);
 }
