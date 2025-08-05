@@ -242,26 +242,25 @@ nav .brand {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  text-align: center;   /* Ensures the image is centered */
-  width: 100%;          /* Make sure the container doesn’t restrict width */
+  text-align: center;
+  width: 80vw; /* 80% of the viewport width */
+  margin: 0 auto;
 }
 
 .art-image-container img {
-  width: auto;          /* 80% of the viewport width */
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
   border-radius: 10px;
   transition: opacity 0.3s ease;
 }
 
+/* Special class for Spirals (half-width) */
 .art-image-container.half-width {
-  width: 50%;
-  margin: 0 auto; /* this centers the image horizontally */
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
+  width: 50vw; /* 50% of the viewport width */
+  margin: 0 auto;
 }
+
 
 
 .art-image-container.half-width img {
