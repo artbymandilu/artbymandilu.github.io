@@ -247,7 +247,7 @@ nav .brand {
 }
 
 .art-image-container img {
-  width: 80vw;          /* 80% of the viewport width */
+  width: auto;          /* 80% of the viewport width */
   height: auto;
   display: block;
   margin: 0 auto;
