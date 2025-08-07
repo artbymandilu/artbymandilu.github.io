@@ -310,8 +310,9 @@ nav .brand {
 
 
 .two-column-row .art-image-container {
-  width: 100%;
-  aspect-ratio: 4 / 5; /* Adjust as needed to match your aesthetic */
+  flex: 1 1 0;
+  aspect-ratio: 4 / 5;
+  max-width: 48%; /* Keeps both images side by side within ~96% total width (plus gap) */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,6 +320,7 @@ nav .brand {
   position: relative;
   border-radius: 12px;
 }
+
 
 .two-column-row .art-image-container img {
   height: 100%;
