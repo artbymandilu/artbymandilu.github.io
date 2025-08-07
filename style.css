@@ -289,14 +289,12 @@ nav .brand {
   display: block;
  
 }
-
 .two-column-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 80vw; /* This limits row width to match the others */
 
 .two-column-row .artwork {
   flex: 1 1 45%;
