@@ -289,12 +289,14 @@ nav .brand {
   display: block;
  
 }
+
 .two-column-row {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+}
 
 .two-column-row .artwork {
   flex: 1 1 45%;
