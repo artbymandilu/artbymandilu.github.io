@@ -169,24 +169,31 @@
 
 
 <div class="two-column-row">
-  <div class="artwork" onclick="openLightbox('art6')">
+  <!-- Left Image -->
+  <div class="artwork" onclick="openLightbox('art4')">
     <div class="art-image-container">
-      <img src="images/dui-le.jpeg" alt="Dui Le" />
+      <img src="images/dui-le.jpeg" alt="Dui Le">
       <div class="hover-overlay"></div>
     </div>
-    <p class="artwork-title">Dui Le</p>
-    <p class="artwork-info">charcoal on paper and newspaper, 2024</p>
+    <div class="art-caption">
+      <strong>Dui Le</strong><br>
+      [Insert dimensions], [Insert media], 2024
+    </div>
   </div>
 
-  <div class="artwork" onclick="openLightbox('art7')">
+  <!-- Right Image -->
+  <div class="artwork" onclick="openLightbox('art5')">
     <div class="art-image-container">
-      <img src="images/pitt-sketch-revised.jpg" alt="Pittsburgh in the Summer" />
+      <img src="images/pitt-sketch-revised.jpg" alt="Pitt Sketch">
       <div class="hover-overlay"></div>
     </div>
-    <p class="artwork-title">Pittsburgh in the Summer</p>
-    <p class="artwork-info">pencil and India ink on paper, 2024</p>
+    <div class="art-caption">
+      <strong>Pitt Sketch</strong><br>
+      [Insert dimensions], [Insert media], 2024
+    </div>
   </div>
 </div>
+
      
 
   </div> <!-- end .gallery -->
@@ -239,25 +246,30 @@
 </div>
 
   
-<div id="lightbox-art6" class="lightbox" onclick="closeLightbox('art6')">
+<!-- Lightbox for Dui Le -->
+<div id="lightbox-art4" class="lightbox">
   <div class="lightbox-content">
-    <img src="images/dui-le.jpeg" alt="Dui Le" />
-    <div class="lightbox-caption">
-      <p><strong>Dui Le</strong></p>
-      <p>charcoal on paper and newspaper, 2024</p>
+    <img src="images/dui-le.jpeg" alt="Dui Le">
+    <div class="lightbox-sidebar">
+      <h2>Dui Le</h2>
+      <p>[Write your artist statement or description here.]</p>
     </div>
+    <span class="close-btn" onclick="closeLightbox('art4')">&times;</span>
   </div>
 </div>
 
-<div id="lightbox-art7" class="lightbox" onclick="closeLightbox('art7')">
+<!-- Lightbox for Pitt Sketch -->
+<div id="lightbox-art5" class="lightbox">
   <div class="lightbox-content">
-    <img src="images/pitt-sketch-revised.jpg" alt="Pittsburgh in the Summer" />
-    <div class="lightbox-caption">
-      <p><strong>Pittsburgh in the Summer</strong></p>
-      <p>charcoal on sketchbook paper, 2024</p>
+    <img src="images/pitt-sketch-revised.jpg" alt="Pitt Sketch">
+    <div class="lightbox-sidebar">
+      <h2>Pitt Sketch</h2>
+      <p>[Write your artist statement or description here.]</p>
     </div>
+    <span class="close-btn" onclick="closeLightbox('art5')">&times;</span>
   </div>
-</div>  
+</div>
+
 <!-- JavaScript -->
 <script>
   function openLightbox(id) {
