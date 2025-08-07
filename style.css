@@ -295,16 +295,19 @@ nav .brand {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 80%; /* This keeps width consistent with Dappled */
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
 }
 
 .two-column-row .artwork {
-  flex: 1 1 45%;
-  max-width: 45%;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .two-column-row .art-image-container {
   width: 100%;
