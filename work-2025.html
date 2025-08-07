@@ -166,31 +166,27 @@
   </div>
 </div>
 
+
+
 <div class="two-column-row">
-  <div class="artwork">
+  <div class="artwork" onclick="openLightbox('art6')">
     <div class="art-image-container">
-      <a href="dui-le-large.jpg" data-lightbox="gallery" data-title="Dui Le">
-       <img src="images/dui-le.jpg" alt="Dui Le" />
-        <div class="overlay">Click to enlarge</div>
-      </a>
+      <img src="images/dui-le.jpeg" alt="Dui Le" />
+      <div class="hover-overlay"></div>
     </div>
     <p class="artwork-title">Dui Le</p>
     <p class="artwork-info">charcoal on paper and newspaper, 2024</p>
   </div>
 
-  <div class="artwork">
+  <div class="artwork" onclick="openLightbox('art7')">
     <div class="art-image-container">
-      <a href="pitt-sketch-large.jpg" data-lightbox="gallery" data-title="Pittsburgh in the Summer">
-       <img src="images/pitt-sketch.jpg" alt="Pittsburgh in the Summer" />
-        <div class="overlay">Click to enlarge</div>
-      </a>
+      <img src="images/pitt-sketch-revised.jpg" alt="Pittsburgh in the Summer" />
+      <div class="hover-overlay"></div>
     </div>
     <p class="artwork-title">Pittsburgh in the Summer</p>
-    <p class="artwork-info">sketchbook pen drawing, 2024</p>
+    <p class="artwork-info">charcoal on sketchbook paper, 2024</p>
   </div>
 </div>
-
-
      
 
   </div> <!-- end .gallery -->
@@ -267,7 +263,25 @@
 </div>
 
   
-  
+<div id="lightbox-art6" class="lightbox" onclick="closeLightbox('art6')">
+  <div class="lightbox-content">
+    <img src="images/dui-le.jpg" alt="Dui Le" />
+    <div class="lightbox-caption">
+      <p><strong>Dui Le</strong></p>
+      <p>charcoal on paper and newspaper, 2024</p>
+    </div>
+  </div>
+</div>
+
+<div id="lightbox-art7" class="lightbox" onclick="closeLightbox('art7')">
+  <div class="lightbox-content">
+    <img src="images/pitt-sketch.jpg" alt="Pittsburgh in the Summer" />
+    <div class="lightbox-caption">
+      <p><strong>Pittsburgh in the Summer</strong></p>
+      <p>charcoal on sketchbook paper, 2024</p>
+    </div>
+  </div>
+</div>  
 <!-- JavaScript -->
 <script>
   function openLightbox(id) {
