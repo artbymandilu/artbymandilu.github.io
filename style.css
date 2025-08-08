@@ -266,14 +266,15 @@ nav .brand {
 }
 
 .art-image-container img {
-  width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
   transition: opacity 0.3s ease;
   position: relative;
   z-index: 1;
-}
 
 /* Special class for Spirals (half-width) */
 .art-image-container.half-width {
