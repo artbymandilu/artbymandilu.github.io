@@ -291,6 +291,35 @@ nav .brand {
 }
 
 
+/* Row with two artworks side by side */
+.artwork-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.artwork.side-by-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.art-image-container.side-by-side {
+  width: 100%;
+  height: 400px; /* adjust as you like */
+}
+
+.art-image-container.side-by-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps them same height without stretching */
+}
+
+
+
 .hover-overlay {
   position: absolute;
   top: 0;
