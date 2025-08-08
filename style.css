@@ -248,8 +248,8 @@ nav .brand {
 }
 
 .artwork.half-width {
-  max-width: 45%;
-  width: auto;
+  max-width: 50vw;   /* matches art-image-container.half-width */
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -289,44 +289,6 @@ nav .brand {
   display: block;
  
 }
-
-.two-column-row {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.two-column-row .artwork {
-  flex: 1 1 45%;
-  max-width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.two-column-row .art-image-container {
-  width: 100%;
-  aspect-ratio: 4 / 5; /* Adjust as needed to match your aesthetic */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  border-radius: 12px;
-}
-
-.two-column-row .art-image-container img {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-
-
 
 
 .hover-overlay {
@@ -547,10 +509,3 @@ nav .brand {
 .form-button:hover {
   background-color: #555;
 }
-
-.content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0; /* remove side padding */
-}
-
