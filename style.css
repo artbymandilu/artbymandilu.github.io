@@ -248,8 +248,8 @@ nav .brand {
 }
 
 .artwork.half-width {
-  max-width: 50vw;   /* matches art-image-container.half-width */
-  width: 100%;
+  max-width: 45%;
+  width: auto;
   margin: 0 auto;
 }
 
