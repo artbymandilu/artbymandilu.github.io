@@ -318,6 +318,13 @@ nav .brand {
   object-fit: cover; /* Keeps them same height without stretching */
 }
 
+.artwork.thirty-eight {
+  max-width: 38vw; /* 38% of the viewport width */
+}
+
+.art-image-container.thirty-eight {
+  width: 38vw; /* match the artwork container width */
+}
 
 
 .hover-overlay {
