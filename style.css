@@ -327,6 +327,15 @@ nav .brand {
 }
 
 
+.artwork.seventy {
+  max-width: 70vw; /* 70% of the viewport width */
+}
+
+.art-image-container.seventy {
+  width: 70vw; /* match the artwork container width */
+}
+
+
 .hover-overlay {
   position: absolute;
   top: 0;
