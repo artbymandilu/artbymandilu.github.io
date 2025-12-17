@@ -293,6 +293,60 @@
 <div class="section-banner">
  Poiesis I Studio Final Project 
 </div>
+
+<!-- Turntable Slider Gentle Breakage -->
+<div class="artwork turntable">
+  <div class="art-image-container turntable-container">
+    <!-- Left Arrow -->
+    <span class="turntable-arrow left">&#10094;</span>
+
+    <!-- Images -->
+    <div class="turntable-images">
+      <img src="images/GentleBreakage1.png" alt="Turntable Image 1" onclick="openLightbox('art-turntable1')">
+      <img src="images/GentleBreakage2.png" alt="Turntable Image 2" onclick="openLightbox('art-turntable1')">
+      <img src="images/GentleBreakage3.png" alt="Turntable Image 3" onclick="openLightbox('art-turntable1')">
+       <img src="images/GentleBreakage4.png" alt="Turntable Image 4" onclick="openLightbox('art-turntable1')">
+    </div>
+
+    <!-- Right Arrow -->
+    <span class="turntable-arrow right">&#10095;</span>
+  </div>
+
+  <!-- Caption -->
+  <div class="art-caption">
+    <strong>Gentle Breakage: 1/8 Model </strong><br>
+    12.5 x 7 x 9", basswood, butcher paper, cardboard, concrete, glue 2025  
+  </div>
+</div>
+
+<!-- Lightbox for Turntable -->
+<div id="lightbox-art-turntable1" class="lightbox">
+  <div class="lightbox-content">
+    <img src="images/GentleBreakage1.png" alt="Turntable Image 1">
+    <div class="lightbox-sidebar">
+      <h2>Gentle Breakage: 1/8 Model</h2>
+      <p>This project addresses a common tension in urban nature spaces: while people go to parks and trails, they often remain confined to controlled paths, sidewalks, 
+        and designated areas, missing the opportunity to truly engage with the natural environment. My design creates a transitional experience that encourages exploration 
+        beyond these boundaries.<p> 
+
+        <p> Located along the Three Rivers Heritage Trail near the Allegheny River in Pittsburgh, the project begins with a wooden structure that interrupts the rigid order of the sidewalk.
+          Its geometric modules form an almost aggressive, wave-like shape that blocks the conventional path, guiding walkers inward while obscuring the exit. 
+          This moment of uncertainty compels people to actively engage with the structure and consider the space beyond the sidewalk.</p>
+
+        </p>Once inside, visitors encounter a concrete lattice that contrasts with the wooden entry. Its organic, fluid form has no prescribed paths, allowing for freedom of movement 
+          and experimentation. The lattice guides people past a brick wall and into the overgrown woods, a space that embodies risk, discovery, and a more authentic encounter
+          with nature. </p>
+
+        </p> By creating this sequence from the controlled, predictable sidewalk to the open, explorative woods, the structure challenges passive park use. It invites visitors to 
+      leave behind habitual routines, interact with the space in new ways, and immerse themselves in the richness and unpredictability of the natural world. 
+      This project is not just about architecture or design; it is about creating a bridge between human order and the vitality of untamed nature,
+      transforming how people experience the parks they visit.</p>
+    </div>
+    <span class="close-btn" onclick="closeLightbox('art-turntable1')">&times;</span>
+  </div>
+</div>
+
+
      
      
   </div> <!-- end .gallery -->
@@ -490,5 +544,29 @@ function closeLightbox(id) {
 }
 
 </script>
+  // Turntable slider functionality
+document.querySelectorAll('.turntable').forEach(slider => {
+  const images = slider.querySelector('.turntable-images');
+  const imgs = images.querySelectorAll('img');
+  let index = 0;
+
+  const showImage = (i) => {
+    images.style.transform = `translateX(-${i * 100}%)`;
+  };
+
+  slider.querySelector('.turntable-arrow.left').addEventListener('click', () => {
+    index = (index - 1 + imgs.length) % imgs.length;
+    showImage(index);
+  });
+
+  slider.querySelector('.turntable-arrow.right').addEventListener('click', () => {
+    index = (index + 1) % imgs.length;
+    showImage(index);
+  });
+
+  // Initialize first image
+  showImage(index);
+});
+
 </body>
 </html>
