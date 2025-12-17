@@ -570,3 +570,46 @@ nav .brand {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* Turntable container */
+.turntable-container {
+  position: relative;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Images wrapper */
+.turntable-images {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+/* Individual images */
+.turntable-images img {
+  min-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Arrows */
+.turntable-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+.turntable-arrow.left { left: 0.5rem; }
+.turntable-arrow.right { right: 0.5rem; }
+
