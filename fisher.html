@@ -80,32 +80,44 @@
 
   </main>
 
-<!-- Full-Screen Image Viewer -->
-<div id="fisherLightbox" class="fisher-lightbox">
-  <span class="fisher-close">&times;</span>
-  <img src="images/fisher-thumb.jpg" alt="Louis Kahn's Fisher House">
-</div>
+<!-- FULLSCREEN IMAGE -->
+  <div id="fisherLightbox" class="fisher-lightbox">
+    <span class="fisher-close">&times;</span>
 
- fisherImage.addEventListener("click", function () {
-    fisherLightbox.classList.add("show");
-  });
+    <img
+      src="images/fisher-thumb.jpg"
+      alt="Louis Kahn's Fisher House"
+    >
+  </div>
 
-  fisherClose.addEventListener("click", function () {
-    fisherLightbox.classList.remove("show");
-  });
 
-  fisherLightbox.addEventListener("click", function (event) {
-    if (event.target === fisherLightbox) {
+  <!-- JAVASCRIPT -->
+  <script>
+    const fisherImage = document.getElementById("fisherImage");
+    const fisherLightbox = document.getElementById("fisherLightbox");
+    const fisherClose = document.querySelector(".fisher-close");
+
+    fisherImage.addEventListener("click", function () {
+      fisherLightbox.classList.add("show");
+    });
+
+    fisherClose.addEventListener("click", function () {
       fisherLightbox.classList.remove("show");
-    }
-  });
+    });
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      fisherLightbox.classList.remove("show");
-    }
-  });
-</script>
+    fisherLightbox.addEventListener("click", function (event) {
+      if (event.target === fisherLightbox) {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+  </script>
+
   
 </body>
 </html>
