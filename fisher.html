@@ -72,9 +72,20 @@
         exploring architectural hierarchy. 
       </p>
 
-      <p>
-        Additional project details, process images, and reflections can be added here.
-      </p>
+     <!-- Fisher House Second Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-uno.png"
+    alt="Fisher House study"
+    id="fisherImage2"
+  >
+</div>
+
+<!-- Full-Screen Image Viewer -->
+<div id="fisherLightbox2" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose2">&times;</span>
+  <img src="images/fisher-uno.PNG" alt="Fisher House study">
+</div>
 
     </section>
 
@@ -117,6 +128,31 @@
       }
     });
   </script>
+
+  const fisherImage2 = document.getElementById("fisherImage2");
+const fisherLightbox2 = document.getElementById("fisherLightbox2");
+const fisherClose2 = document.getElementById("fisherClose2");
+
+fisherImage2.addEventListener("click", function () {
+  fisherLightbox2.classList.add("show");
+});
+
+fisherClose2.addEventListener("click", function () {
+  fisherLightbox2.classList.remove("show");
+});
+
+fisherLightbox2.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox2) {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
 
   
 </body>
