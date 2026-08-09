@@ -731,3 +731,25 @@ nav .brand {
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
+
+/* FISHER HOUSE MAIN IMAGE */
+
+.fisher-main-image {
+  width: 80vw;
+  margin: 0 auto 5rem auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fisher-main-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.fisher-main-image img:hover {
+  transform: scale(1.01);
+}
