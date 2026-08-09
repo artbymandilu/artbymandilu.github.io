@@ -696,3 +696,38 @@ nav .brand {
 .project-card:hover img {
   transform: scale(1.03);
 }
+
+/* FISHER HOUSE PROJECT PAGE */
+
+.project-header {
+  padding-top: 10rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-header h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: #e6db7a;
+  margin-bottom: 1.5rem;
+}
+
+.project-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.project-description {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.project-description h2 {
+  margin-bottom: 1.5rem;
+}
+
+.project-description p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
