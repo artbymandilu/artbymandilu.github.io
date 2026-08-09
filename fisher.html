@@ -85,6 +85,27 @@
   <span class="fisher-close">&times;</span>
   <img src="images/fisher-thumb.jpg" alt="Louis Kahn's Fisher House">
 </div>
+
+ fisherImage.addEventListener("click", function () {
+    fisherLightbox.classList.add("show");
+  });
+
+  fisherClose.addEventListener("click", function () {
+    fisherLightbox.classList.remove("show");
+  });
+
+  fisherLightbox.addEventListener("click", function (event) {
+    if (event.target === fisherLightbox) {
+      fisherLightbox.classList.remove("show");
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      fisherLightbox.classList.remove("show");
+    }
+  });
+</script>
   
 </body>
 </html>
