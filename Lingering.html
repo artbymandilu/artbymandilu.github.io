@@ -398,6 +398,31 @@ document.addEventListener("keydown", function (event) {
     fisherLightbox5.classList.remove("show");
   }
 });
+
+ // Turntable slider functionality
+document.querySelectorAll('.turntable').forEach(slider => {
+  const images = slider.querySelector('.turntable-images');
+  const imgs = images.querySelectorAll('img');
+  let index = 0;
+
+  const showImage = (i) => {
+    images.style.transform = `translateX(-${i * 100}%)`;
+  };
+
+  slider.querySelector('.turntable-arrow.left').addEventListener('click', () => {
+    index = (index - 1 + imgs.length) % imgs.length;
+    showImage(index);
+  });
+
+  slider.querySelector('.turntable-arrow.right').addEventListener('click', () => {
+    index = (index + 1) % imgs.length;
+    showImage(index);
+  });
+
+  // Initialize first image
+  showImage(index);
+});
+
     
     
   </script>  
