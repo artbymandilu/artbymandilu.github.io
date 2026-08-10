@@ -83,6 +83,15 @@
 </div>
 
 
+<!-- Fisher House Third Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-dos.png"
+    alt="Fisher House study"
+    id="fisherImage3"
+  >
+</div>
+    
 <!-- SECOND IMAGE FULL-SCREEN VIEWER -->
 <div id="fisherLightbox2" class="fisher-lightbox">
   <span class="fisher-close" id="fisherClose2">&times;</span>
@@ -105,6 +114,26 @@
     >
   </div>
 
+<!-- Third Image Full-Screen Viewer -->
+<div id="fisherLightbox3" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose3">&times;</span>
+
+  <img
+    src="images/fisher-dos.png"
+    alt="Fisher House study"
+  >
+</div>
+
+
+
+
+
+
+
+
+
+
+  
 
   <!-- JAVASCRIPT -->
   <script>
@@ -159,7 +188,29 @@ document.addEventListener("keydown", function (event) {
   </script>
 
  
+const fisherImage3 = document.getElementById("fisherImage3");
+const fisherLightbox3 = document.getElementById("fisherLightbox3");
+const fisherClose3 = document.getElementById("fisherClose3");
 
+fisherImage3.addEventListener("click", function () {
+  fisherLightbox3.classList.add("show");
+});
+
+fisherClose3.addEventListener("click", function () {
+  fisherLightbox3.classList.remove("show");
+});
+
+fisherLightbox3.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox3) {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox3.classList.remove("show");
+  }
+});
 
   
 </body>
