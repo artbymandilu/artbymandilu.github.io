@@ -113,6 +113,15 @@
     id="fisherImage4"
   >
 </div>
+    
+    <!-- Fisher House fifth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-quatro.png"
+    alt="Fisher House study"
+    id="fisherImage5"
+  >
+</div>
 
 
 
@@ -160,7 +169,15 @@
   >
 </div>
 
+<!-- Fifth Image Full-Screen Viewer -->
+<div id="fisherLightbox5" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose5">&times;</span>
 
+  <img
+    src="images/fisher-quatro.png"
+    alt="Fisher House study"
+  >
+</div>
 
 
 
@@ -266,6 +283,29 @@ fisherLightbox4.addEventListener("click", function (event) {
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     fisherLightbox4.classList.remove("show");
+  }
+});
+    const fisherImage5 = document.getElementById("fisherImage5");
+const fisherLightbox5 = document.getElementById("fisherLightbox5");
+const fisherClose5 = document.getElementById("fisherClose5");
+
+fisherImage5.addEventListener("click", function () {
+  fisherLightbox5.classList.add("show");
+});
+
+fisherClose5.addEventListener("click", function () {
+  fisherLightbox5.classList.remove("show");
+});
+
+fisherLightbox5.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox5) {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox5.classList.remove("show");
   }
 });
     
