@@ -344,5 +344,31 @@ document.querySelectorAll('.turntable').forEach(slider => {
     
     
   </script>  
+    <script>
+  const turntable = document.querySelector('.turntable-images');
+  const images = document.querySelectorAll('.turntable-images img');
+  const leftArrow = document.querySelector('.turntable-arrow.left');
+  const rightArrow = document.querySelector('.turntable-arrow.right');
+
+  let currentIndex = 0;
+
+  function updateTurntable() {
+    turntable.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  rightArrow.addEventListener('click', () => {
+    if (currentIndex < images.length - 1) {
+      currentIndex++;
+      updateTurntable();
+    }
+  });
+
+  leftArrow.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateTurntable();
+    }
+  });
+</script>
 </body>
 </html>
