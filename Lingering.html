@@ -59,7 +59,7 @@ both past and present.
   <img
     src="images/lib-render-uno.png"
     alt="Lingering Library"
-    id="librenderImage"
+    id="libid1"
   >
 </div>
 
@@ -90,7 +90,7 @@ courtyard and a controlled-access elevated tunnel linking the residence to the l
   <img
     src="images/lib-site.png"
     alt="lib study"
-    id="libImage2"
+    id="libid2"
   >
 </div>
 
@@ -99,7 +99,7 @@ courtyard and a controlled-access elevated tunnel linking the residence to the l
   <img
     src="images/lib-render-2.png"
     alt="lib study"
-    id="libImage3"
+    id="libid3"
   >
 </div>
 
@@ -142,7 +142,7 @@ grams and people to intersect. As the upper floor is also used by family members
   <img
     src="images/lib-parti.png"
     alt="lib study"
-    id="libImage4"
+    id="libid4"
   >
 </div>
     
@@ -151,7 +151,7 @@ grams and people to intersect. As the upper floor is also used by family members
   <img
     src="images/lib-program.png"
     alt="lib study"
-    id="lib 5"
+    id="libid5"
   >
 </div>
 
@@ -160,7 +160,7 @@ grams and people to intersect. As the upper floor is also used by family members
   <img
     src="images/lib-section.png"
     alt="lib study"
-    id="lib 6"
+    id="libid6"
   >
 </div>
 
@@ -169,7 +169,7 @@ grams and people to intersect. As the upper floor is also used by family members
   <img
     src="images/lib-diagrams.png"
     alt="lib study"
-    id="lib 7"
+    id="libid7"
   >
 </div>
 
@@ -220,7 +220,7 @@ grams and people to intersect. As the upper floor is also used by family members
     
 <!-- SECOND IMAGE FULL-SCREEN VIEWER -->
 <div id="fisherLightbox2" class="fisher-lightbox">
-  <span class="fisher-close" id="fisherClose2">&times;</span>
+  <span class="fisher-close" id="libid2">&times;</span>
 
   <img
     src="images/lib-site.png"
@@ -242,7 +242,7 @@ grams and people to intersect. As the upper floor is also used by family members
 
 <!-- Third Image Full-Screen Viewer -->
 <div id="fisherLightbox3" class="fisher-lightbox">
-  <span class="fisher-close" id="fisherClose3">&times;</span>
+  <span class="fisher-close" id="libid3">&times;</span>
 
   <img
     src="images/lib-render-2.png"
@@ -252,7 +252,7 @@ grams and people to intersect. As the upper floor is also used by family members
 
   <!-- Fourth Image Full-Screen Viewer -->
 <div id="fisherLightbox4" class="fisher-lightbox">
-  <span class="fisher-close" id="fisherClose4">&times;</span>
+  <span class="fisher-close" id="libid4">&times;</span>
 
   <img
     src="images/lib-parti.png"
@@ -262,10 +262,30 @@ grams and people to intersect. As the upper floor is also used by family members
 
 <!-- Fifth Image Full-Screen Viewer -->
 <div id="fisherLightbox5" class="fisher-lightbox">
-  <span class="fisher-close" id="fisherClose5">&times;</span>
+  <span class="fisher-close" id="libid5">&times;</span>
 
   <img
     src="images/lib-program.png"
+    alt="lib study"
+  >
+</div>
+
+  <!-- 6 Image Full-Screen Viewer -->
+<div id="fisherLightbox5" class="fisher-lightbox">
+  <span class="fisher-close" id="libid6">&times;</span>
+
+  <img
+    src="images/lib-section.png"
+    alt="lib study"
+  >
+</div>
+
+   <!-- 7 Image Full-Screen Viewer -->
+<div id="fisherLightbox5" class="fisher-lightbox">
+  <span class="fisher-close" id="libid7">&times;</span>
+
+  <img
+    src="images/lib-diagrams.png"
     alt="lib study"
   >
 </div>
@@ -280,7 +300,7 @@ grams and people to intersect. As the upper floor is also used by family members
 
   <!-- JAVASCRIPT -->
   <script>
-    const fisherImage = document.getElementById("fisherImage");
+    const fisherImage = document.getElementById("libid1");
     const fisherLightbox = document.getElementById("fisherLightbox");
     const fisherClose = document.querySelector(".fisher-close");
 
@@ -304,7 +324,7 @@ grams and people to intersect. As the upper floor is also used by family members
       }
     });
 
- const fisherImage2 = document.getElementById("fisherImage2");
+ const fisherImage2 = document.getElementById("libid2");
 const fisherLightbox2 = document.getElementById("fisherLightbox2");
 const fisherClose2 = document.getElementById("fisherClose2");
 
@@ -328,7 +348,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-    const fisherImage3 = document.getElementById("fisherImage3");
+    const fisherImage3 = document.getElementById("libid3");
 const fisherLightbox3 = document.getElementById("fisherLightbox3");
 const fisherClose3 = document.getElementById("fisherClose3");
 
@@ -352,7 +372,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-const fisherImage4 = document.getElementById("fisherImage4");
+const fisherImage4 = document.getElementById("libid4");
 const fisherLightbox4 = document.getElementById("fisherLightbox4");
 const fisherClose4 = document.getElementById("fisherClose4");
 
@@ -375,7 +395,7 @@ document.addEventListener("keydown", function (event) {
     fisherLightbox4.classList.remove("show");
   }
 });
-    const fisherImage5 = document.getElementById("fisherImage5");
+    const fisherImage5 = document.getElementById("libid5");
 const fisherLightbox5 = document.getElementById("fisherLightbox5");
 const fisherClose5 = document.getElementById("fisherClose5");
 
@@ -399,6 +419,54 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+ const fisherImage5 = document.getElementById("libid5");
+const fisherLightbox5 = document.getElementById("fisherLightbox5");
+const fisherClose5 = document.getElementById("fisherClose5");
+
+fisherImage5.addEventListener("click", function () {
+  fisherLightbox5.classList.add("show");
+});
+
+fisherClose5.addEventListener("click", function () {
+  fisherLightbox5.classList.remove("show");
+});
+
+fisherLightbox5.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox5) {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+    const fisherImage5 = document.getElementById("libid7");
+const fisherLightbox5 = document.getElementById("fisherLightbox5");
+const fisherClose5 = document.getElementById("fisherClose5");
+
+fisherImage5.addEventListener("click", function () {
+  fisherLightbox5.classList.add("show");
+});
+
+fisherClose5.addEventListener("click", function () {
+  fisherLightbox5.classList.remove("show");
+});
+
+fisherLightbox5.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox5) {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+ 
  // Turntable slider functionality
 document.querySelectorAll('.turntable').forEach(slider => {
   const images = slider.querySelector('.turntable-images');
