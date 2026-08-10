@@ -139,6 +139,16 @@
   >
 </div>
 
+  <!-- Fourth Image Full-Screen Viewer -->
+<div id="fisherLightbox4" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose4">&times;</span>
+
+  <img
+    src="images/fisher-tres.png"
+    alt="Fisher House study"
+  >
+</div>
+
 
 
 
@@ -223,6 +233,31 @@ document.addEventListener("keydown", function (event) {
     fisherLightbox3.classList.remove("show");
   }
 });
+
+const fisherImage4 = document.getElementById("fisherImage4");
+const fisherLightbox4 = document.getElementById("fisherLightbox4");
+const fisherClose4 = document.getElementById("fisherClose4");
+
+fisherImage4.addEventListener("click", function () {
+  fisherLightbox4.classList.add("show");
+});
+
+fisherClose4.addEventListener("click", function () {
+  fisherLightbox4.classList.remove("show");
+});
+
+fisherLightbox4.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox4) {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+    
     
   </script>  
 </body>
