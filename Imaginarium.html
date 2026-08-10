@@ -1,1 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fisher House: A Precedent Study | Mandi Lu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="brand">Mandi Lu</div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-button">About</a>
+
+      <div class="dropdown">
+        <a href="work-2025.html" class="nav-button active">My Work</a>
+
+        <div class="dropdown-content">
+          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2026.html">Studio Projects</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- PROJECT CONTENT -->
+  <main class="project-page">
+
+    <section class="project-header">
+  <h1>Fisher House: A Precedent Study</h1>
+
+  <p>
+    A study exploring Louis Kahn's Fisher House as a testing ground of spatial
+    orders and environmental control in a domestic space.
+  </p>
+       <p>
+        Academic Term: 2026 Spring  
+      </p>
+      <p>
+        Instructor: Tonya Markiewicz 
+      </p>
+</section>
+
+<!-- FIRST FISHER HOUSE IMAGE -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-thumb.jpg"
+    alt="Louis Kahn's Fisher House"
+    id="fisherImage"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2>Project Description</h2>
+
+  <p>
+    Louis Kahn's Fisher House was designed in 1967 for Mrs. Doris Fisher and Dr. Norman Fisher, a practicing 
+    physician. Living in Hatboro, Pennsylvania, the family sought both seclusion in the woods and space for Dr. Fisher 
+    to receive his patients. This spatial conversation between public and privacy makes the house an ideal site for
+    exploring architectural hierarchy. Moreover, its time of construction is the same as several of Kahn's larger-scale projects, allowing 
+    the Fisher House to act as a testing ground for strategies Kahn was developing for those larger projects. 
+  </p>
+
+</section>
+
+
+<!-- SECOND FISHER HOUSE IMAGE -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-uno.png"
+    alt="Fisher House study"
+    id="fisherImage2"
+  >
+</div>
+
+
+<!-- Fisher House Third Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-dos.png"
+    alt="Fisher House study"
+    id="fisherImage3"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2> </h2>
+
+  <p>
+    This handmade model explores both interior and exterior conditions and how Kahn differentiates between the two spaces of differing light, movement, and purpose. For example, the 
+    public-facing spaces include thicker walls and a denser grid system, producing sound and light barriers that slow movement, speed up time, and reinforce privacy. 
+  </p>
+
+</section>
+    
+  <!-- Fisher House Fourth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-tres.png"
+    alt="Fisher House study"
+    id="fisherImage4"
+  >
+</div>
+    
+    <!-- Fisher House fifth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/fisher-quatro.png"
+    alt="Fisher House study"
+    id="fisherImage5"
+  >
+</div>
+
+
+
+    
+    
+<!-- SECOND IMAGE FULL-SCREEN VIEWER -->
+<div id="fisherLightbox2" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose2">&times;</span>
+
+  <img
+    src="images/fisher-uno.png"
+    alt="Fisher House study"
+  >
+</div>
+  
+  </main>
+
+<!-- FULLSCREEN IMAGE -->
+  <div id="fisherLightbox" class="fisher-lightbox">
+    <span class="fisher-close">&times;</span>
+
+    <img
+      src="images/fisher-thumb.jpg"
+      alt="Louis Kahn's Fisher House"
+    >
+  </div>
+
+<!-- Third Image Full-Screen Viewer -->
+<div id="fisherLightbox3" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose3">&times;</span>
+
+  <img
+    src="images/fisher-dos.png"
+    alt="Fisher House study"
+  >
+</div>
+
+  <!-- Fourth Image Full-Screen Viewer -->
+<div id="fisherLightbox4" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose4">&times;</span>
+
+  <img
+    src="images/fisher-tres.png"
+    alt="Fisher House study"
+  >
+</div>
+
+<!-- Fifth Image Full-Screen Viewer -->
+<div id="fisherLightbox5" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose5">&times;</span>
+
+  <img
+    src="images/fisher-quatro.png"
+    alt="Fisher House study"
+  >
+</div>
+
+
+
+
+
+
+
+
+  
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const fisherImage = document.getElementById("fisherImage");
+    const fisherLightbox = document.getElementById("fisherLightbox");
+    const fisherClose = document.querySelector(".fisher-close");
+
+    fisherImage.addEventListener("click", function () {
+      fisherLightbox.classList.add("show");
+    });
+
+    fisherClose.addEventListener("click", function () {
+      fisherLightbox.classList.remove("show");
+    });
+
+    fisherLightbox.addEventListener("click", function (event) {
+      if (event.target === fisherLightbox) {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+ const fisherImage2 = document.getElementById("fisherImage2");
+const fisherLightbox2 = document.getElementById("fisherLightbox2");
+const fisherClose2 = document.getElementById("fisherClose2");
+
+fisherImage2.addEventListener("click", function () {
+  fisherLightbox2.classList.add("show");
+});
+
+fisherClose2.addEventListener("click", function () {
+  fisherLightbox2.classList.remove("show");
+});
+
+fisherLightbox2.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox2) {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+    const fisherImage3 = document.getElementById("fisherImage3");
+const fisherLightbox3 = document.getElementById("fisherLightbox3");
+const fisherClose3 = document.getElementById("fisherClose3");
+
+fisherImage3.addEventListener("click", function () {
+  fisherLightbox3.classList.add("show");
+});
+
+fisherClose3.addEventListener("click", function () {
+  fisherLightbox3.classList.remove("show");
+});
+
+fisherLightbox3.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox3) {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+const fisherImage4 = document.getElementById("fisherImage4");
+const fisherLightbox4 = document.getElementById("fisherLightbox4");
+const fisherClose4 = document.getElementById("fisherClose4");
+
+fisherImage4.addEventListener("click", function () {
+  fisherLightbox4.classList.add("show");
+});
+
+fisherClose4.addEventListener("click", function () {
+  fisherLightbox4.classList.remove("show");
+});
+
+fisherLightbox4.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox4) {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+    const fisherImage5 = document.getElementById("fisherImage5");
+const fisherLightbox5 = document.getElementById("fisherLightbox5");
+const fisherClose5 = document.getElementById("fisherClose5");
+
+fisherImage5.addEventListener("click", function () {
+  fisherLightbox5.classList.add("show");
+});
+
+fisherClose5.addEventListener("click", function () {
+  fisherLightbox5.classList.remove("show");
+});
+
+fisherLightbox5.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox5) {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+    
+    
+  </script>  
+</body>
+</html>
