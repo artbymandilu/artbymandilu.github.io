@@ -1,1 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Lingering Library | Mandi Lu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="brand">Mandi Lu</div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-button">About</a>
+
+      <div class="dropdown">
+        <a href="work-2025.html" class="nav-button active">My Work</a>
+
+        <div class="dropdown-content">
+          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2026.html">Studio Projects</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- PROJECT CONTENT -->
+  <main class="project-page">
+
+    <section class="project-header">
+  <h1>The Lingering Library</h1>
+
+  <p>
+  Located on Butler Street in Lawrenceville, Pittsburgh, this project sits in a neighborhood
+shaped by its industrial architecture of tightly packed brick buildings and repetitive gridded
+fenestration. While this historic fabric remains visually dominant, Lawrenceville has evolved
+into a vibrant arts district with a growing population of young professionals and families. This
+project responds to the disconnect between the area’s contemporary cultural identity and
+its static architectural expression by proposing a hybrid library and residence that reflects
+both past and present.
+  </p>
+       <p>
+        Academic Term: 2026 Spring  
+      </p>
+      <p>
+        Instructors: Tommy CheeMou Yang & Tonya Markiewicz 
+      </p>
+</section>
+
+<!-- FIRST MERIDIAN HOUSE IMAGE -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-uno1.png"
+    alt="Meridian Imaginarium"
+    id="fisherImage"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2>Project Description</h2>
+
+  <p>
+   The front half of the building houses a modern library designed to support collaboration,
+technology, and varied modes of study.  A central courtyard organizes circulation and serves 
+    as a shared public space, addressing the neighborhood’s lack of accessible green areas. 
+  </p>
+
+  <p>
+    The rear portion of the building accommodates a multigenerational family, reflecting common household 
+    structures in Lawrenceville. This family includes a mother who works at the UPMC,
+    a father who works at the library, a grandparent, and their 4-year-old daughter. The
+home is organized to balance privacy and connection, with living spaces oriented toward the
+courtyard and a controlled-access elevated tunnel linking the residence to the library. 
+  </p>
+
+</section>
+
+
+<!-- SECOND MERIDIAN HOUSE IMAGE -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-dos2.png"
+    alt="meridian study"
+    id="meridianImage2"
+  >
+</div>
+
+
+<!-- MERIDIAN  Third Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-tres.png"
+    alt="meridian study"
+    id="meridianImage3"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2> </h2>
+
+  <p>
+  This interactive and handmade model reflects the differenciation between the building's domestic and community
+    functions, as the two areas are both separatable and openable. 
+  </p>
+
+</section>
+    
+  <!-- Meridian  Fourth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-quatro4.png"
+    alt="meridian study"
+    id="meridianImage4"
+  >
+</div>
+    
+    <!-- Meridian fifth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-cinco.png"
+    alt="meridian study"
+    id="meridian5"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2> </h2>
+
+  <p>
+  Just as users interact differently with the first and second floor of the gallery, one can do the same
+with this handmade model. The first and second floor open on the same unifying axis, but are separateable.
+  </p>
+
+</section>
+
+    
+    
+<!-- SECOND IMAGE FULL-SCREEN VIEWER -->
+<div id="fisherLightbox2" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose2">&times;</span>
+
+  <img
+    src="images/meridian-dos2.png"
+    alt="meridian study"
+  >
+</div>
+  
+  </main>
+
+<!-- FULLSCREEN IMAGE -->
+  <div id="fisherLightbox" class="fisher-lightbox">
+    <span class="fisher-close">&times;</span>
+
+    <img
+      src="images/meridian-uno1.png"
+      alt="Meridian Imaginarium"
+    >
+  </div>
+
+<!-- Third Image Full-Screen Viewer -->
+<div id="fisherLightbox3" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose3">&times;</span>
+
+  <img
+    src="images/meridian-tres.png"
+    alt="meridian study"
+  >
+</div>
+
+  <!-- Fourth Image Full-Screen Viewer -->
+<div id="fisherLightbox4" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose4">&times;</span>
+
+  <img
+    src="images/meridian-quatro4.png"
+    alt="meridian study"
+  >
+</div>
+
+<!-- Fifth Image Full-Screen Viewer -->
+<div id="fisherLightbox5" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose5">&times;</span>
+
+  <img
+    src="images/meridian-cinco.png"
+    alt="meridian study"
+  >
+</div>
+
+
+
+
+
+
+
+  
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const fisherImage = document.getElementById("fisherImage");
+    const fisherLightbox = document.getElementById("fisherLightbox");
+    const fisherClose = document.querySelector(".fisher-close");
+
+    fisherImage.addEventListener("click", function () {
+      fisherLightbox.classList.add("show");
+    });
+
+    fisherClose.addEventListener("click", function () {
+      fisherLightbox.classList.remove("show");
+    });
+
+    fisherLightbox.addEventListener("click", function (event) {
+      if (event.target === fisherLightbox) {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+ const fisherImage2 = document.getElementById("fisherImage2");
+const fisherLightbox2 = document.getElementById("fisherLightbox2");
+const fisherClose2 = document.getElementById("fisherClose2");
+
+fisherImage2.addEventListener("click", function () {
+  fisherLightbox2.classList.add("show");
+});
+
+fisherClose2.addEventListener("click", function () {
+  fisherLightbox2.classList.remove("show");
+});
+
+fisherLightbox2.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox2) {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+    const fisherImage3 = document.getElementById("fisherImage3");
+const fisherLightbox3 = document.getElementById("fisherLightbox3");
+const fisherClose3 = document.getElementById("fisherClose3");
+
+fisherImage3.addEventListener("click", function () {
+  fisherLightbox3.classList.add("show");
+});
+
+fisherClose3.addEventListener("click", function () {
+  fisherLightbox3.classList.remove("show");
+});
+
+fisherLightbox3.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox3) {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+const fisherImage4 = document.getElementById("fisherImage4");
+const fisherLightbox4 = document.getElementById("fisherLightbox4");
+const fisherClose4 = document.getElementById("fisherClose4");
+
+fisherImage4.addEventListener("click", function () {
+  fisherLightbox4.classList.add("show");
+});
+
+fisherClose4.addEventListener("click", function () {
+  fisherLightbox4.classList.remove("show");
+});
+
+fisherLightbox4.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox4) {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+    const fisherImage5 = document.getElementById("fisherImage5");
+const fisherLightbox5 = document.getElementById("fisherLightbox5");
+const fisherClose5 = document.getElementById("fisherClose5");
+
+fisherImage5.addEventListener("click", function () {
+  fisherLightbox5.classList.add("show");
+});
+
+fisherClose5.addEventListener("click", function () {
+  fisherLightbox5.classList.remove("show");
+});
+
+fisherLightbox5.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox5) {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+    
+    
+  </script>  
+</body>
+</html>
