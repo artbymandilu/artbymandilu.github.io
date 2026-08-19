@@ -793,3 +793,10 @@ nav .brand {
 .fisher-lightbox.show {
   display: flex;
 }
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
