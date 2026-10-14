@@ -1,1 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlo Scarpa's Brion Cemetery: A Precedent Study | Mandi Lu</title>
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="brand">Mandi Lu</div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-button">About</a>
+
+      <div class="dropdown">
+        <a href="work-2025.html" class="nav-button active">My Work</a>
+
+        <div class="dropdown-content">
+          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2026.html">Studio Projects</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- PROJECT CONTENT -->
+  <main class="project-page">
+
+    <section class="project-header">
+  <h1>Carlo Scarpa's Brion Cemetery: A Precedent Study</h1>
+
+  <p>
+   A precedent study exploring how the interplay between mass and ground shapes 
+    architectural narrative, choreographs human interaction, and transforms the landscape into an active participant in the experience of space.
+  </p>
+       <p>
+        Academic Term: 2026 Fall  
+      </p>
+      <p>
+        Instructors: Jeremy Ficca and Maryam Karimi 
+      </p>
+</section>
+
+<!-- FIRST MERIDIAN HOUSE IMAGE -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-uno1.png"
+    alt="Meridian Imaginarium"
+    id="fisherImage"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2>Project Description</h2>
+
+  <p>
+   All programmatic elements wrap around the gallery in a cluster organization. The lower rooms
+(the kitchenette, powder room, and receiving space) are all adjacent and normal to the lower half
+of the gallery. Their adjacency allows for ease of movement and convenience in home life. The tilted plan also 
+    allows for daylight to be controlled so that shadows don’t interfere with the studio space 
+    and temperatures stay more consistent (with the longer axis parallel with the north-south axis).
+  </p>
+
+</section>
+
+
+<!-- SECOND MERIDIAN HOUSE IMAGE -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-dos2.png"
+    alt="meridian study"
+    id="meridianImage2"
+  >
+</div>
+
+
+<!-- MERIDIAN  Third Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-tres.png"
+    alt="meridian study"
+    id="meridianImage3"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2> </h2>
+
+  <p>
+   Culturally, the project reflects on revival art. Historical cartography reveals how projections change
+and how borders shifted and continue to shift as knowledge evolves. Similarly, the Meridian Imaginarium rejects 
+    static alignment. The upper floor’s rotation builds upon but does not replicate the
+past. Just as maps evolve, this mapmaker’s space evolves as well, resuling in a meridian structure
+that maps the very act of mapping itself.
+  </p>
+
+</section>
+    
+  <!-- Meridian  Fourth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-quatro4.png"
+    alt="meridian study"
+    id="meridianImage4"
+  >
+</div>
+    
+    <!-- Meridian fifth Image -->
+<div class="fisher-main-image">
+  <img
+    src="images/meridian-cinco.png"
+    alt="meridian study"
+    id="meridian5"
+  >
+</div>
+
+
+<section class="project-description">
+
+  <h2> </h2>
+
+  <p>
+  Just as users interact differently with the first and second floor of the gallery, one can do the same
+with this handmade model. The first and second floor open on the same unifying axis, but are separateable.
+  </p>
+
+</section>
+
+    
+    
+<!-- SECOND IMAGE FULL-SCREEN VIEWER -->
+<div id="fisherLightbox2" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose2">&times;</span>
+
+  <img
+    src="images/meridian-dos2.png"
+    alt="meridian study"
+  >
+</div>
+  
+  </main>
+
+<!-- FULLSCREEN IMAGE -->
+  <div id="fisherLightbox" class="fisher-lightbox">
+    <span class="fisher-close">&times;</span>
+
+    <img
+      src="images/meridian-uno1.png"
+      alt="Meridian Imaginarium"
+    >
+  </div>
+
+<!-- Third Image Full-Screen Viewer -->
+<div id="fisherLightbox3" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose3">&times;</span>
+
+  <img
+    src="images/meridian-tres.png"
+    alt="meridian study"
+  >
+</div>
+
+  <!-- Fourth Image Full-Screen Viewer -->
+<div id="fisherLightbox4" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose4">&times;</span>
+
+  <img
+    src="images/meridian-quatro4.png"
+    alt="meridian study"
+  >
+</div>
+
+<!-- Fifth Image Full-Screen Viewer -->
+<div id="fisherLightbox5" class="fisher-lightbox">
+  <span class="fisher-close" id="fisherClose5">&times;</span>
+
+  <img
+    src="images/meridian-cinco.png"
+    alt="meridian study"
+  >
+</div>
+
+
+
+
+
+
+
+  
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const fisherImage = document.getElementById("fisherImage");
+    const fisherLightbox = document.getElementById("fisherLightbox");
+    const fisherClose = document.querySelector(".fisher-close");
+
+    fisherImage.addEventListener("click", function () {
+      fisherLightbox.classList.add("show");
+    });
+
+    fisherClose.addEventListener("click", function () {
+      fisherLightbox.classList.remove("show");
+    });
+
+    fisherLightbox.addEventListener("click", function (event) {
+      if (event.target === fisherLightbox) {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        fisherLightbox.classList.remove("show");
+      }
+    });
+
+ const fisherImage2 = document.getElementById("fisherImage2");
+const fisherLightbox2 = document.getElementById("fisherLightbox2");
+const fisherClose2 = document.getElementById("fisherClose2");
+
+fisherImage2.addEventListener("click", function () {
+  fisherLightbox2.classList.add("show");
+});
+
+fisherClose2.addEventListener("click", function () {
+  fisherLightbox2.classList.remove("show");
+});
+
+fisherLightbox2.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox2) {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox2.classList.remove("show");
+  }
+});
+
+    const fisherImage3 = document.getElementById("fisherImage3");
+const fisherLightbox3 = document.getElementById("fisherLightbox3");
+const fisherClose3 = document.getElementById("fisherClose3");
+
+fisherImage3.addEventListener("click", function () {
+  fisherLightbox3.classList.add("show");
+});
+
+fisherClose3.addEventListener("click", function () {
+  fisherLightbox3.classList.remove("show");
+});
+
+fisherLightbox3.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox3) {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox3.classList.remove("show");
+  }
+});
+
+const fisherImage4 = document.getElementById("fisherImage4");
+const fisherLightbox4 = document.getElementById("fisherLightbox4");
+const fisherClose4 = document.getElementById("fisherClose4");
+
+fisherImage4.addEventListener("click", function () {
+  fisherLightbox4.classList.add("show");
+});
+
+fisherClose4.addEventListener("click", function () {
+  fisherLightbox4.classList.remove("show");
+});
+
+fisherLightbox4.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox4) {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox4.classList.remove("show");
+  }
+});
+    const fisherImage5 = document.getElementById("fisherImage5");
+const fisherLightbox5 = document.getElementById("fisherLightbox5");
+const fisherClose5 = document.getElementById("fisherClose5");
+
+fisherImage5.addEventListener("click", function () {
+  fisherLightbox5.classList.add("show");
+});
+
+fisherClose5.addEventListener("click", function () {
+  fisherLightbox5.classList.remove("show");
+});
+
+fisherLightbox5.addEventListener("click", function (event) {
+  if (event.target === fisherLightbox5) {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fisherLightbox5.classList.remove("show");
+  }
+});
+    
+    
+  </script>  
+</body>
+</html>
 
