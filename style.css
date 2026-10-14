@@ -645,13 +645,15 @@ nav .brand {
   display: block;
 }
 
+
 .project-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  flex-wrap: wrap;
 }
+
 
 .project-card {
   position: relative;
