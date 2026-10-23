@@ -99,7 +99,7 @@ nav .brand {
 }
 
 .dropdown:hover .dropdown-content {
-  max-height: 200px;
+  max-height: 500px;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
