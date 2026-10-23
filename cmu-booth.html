@@ -1,14 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Lingering Library | Mandi Lu</title>
+  <title>CMU Asian Student Association 2025 Carnival Booth | Mandi Lu</title>
 
-<link rel="icon" type="image/png" href="images/favicon.png">
-  
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Booth video */
+    .booth-video-section {
+      margin: 50px 0;
+    }
+
+    .booth-video-section h2,
+    .booth-bts-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .booth-video {
+      width: 100%;
+      display: block;
+      height: auto;
+      max-height: 750px;
+      background: #000;
+      object-fit: contain;
+    }
+
+    .booth-video-caption {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      line-height: 1.6;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    /* Behind-the-scenes image gallery */
+    .booth-bts-section {
+      margin: 60px 0;
+    }
+
+    .booth-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .booth-gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .booth-gallery img:hover {
+      opacity: 0.85;
+    }
+
+    @media (max-width: 700px) {
+      .booth-gallery {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .booth-video-section h2,
+      .booth-bts-section h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -24,7 +93,7 @@
         <a href="work-2025.html" class="nav-button active">My Work</a>
 
         <div class="dropdown-content">
-          <a href="work-2025.html">2025 & Earlier</a>
+          <a href="work-2025.html">2025 &amp; Earlier</a>
           <a href="work-2026.html">Studio Projects</a>
           <a href="cmu-booth.html">CMU Booth</a>
         </div>
@@ -34,6 +103,113 @@
     </div>
   </nav>
 
-
   <!-- PROJECT CONTENT -->
   <main class="project-page">
+
+    <!-- PROJECT HEADER -->
+    <section class="project-header">
+      <h1>CMU Asian Student Association 2025 Carnival Booth</h1>
+
+      <p>
+        A collaborative, two-story architectural installation built by
+        Carnegie Mellon University's Asian Student Association for the
+        2026 Spring Carnival. Working alongside a team of approximately
+        30 students, my work included building walls and floor panels, painting
+        walls and three-dimensional scenic elements, and assisting with
+        some of the electrical work.
+      </p>
+
+      <p>
+        Academic Year: 2025–2026
+      </p>
+
+      <p>
+        Organization: Carnegie Mellon University Asian Student Association
+      </p>
+
+      <p>
+        Theme: K-Pop Demon Hunters
+      </p>
+
+      <p>
+        Award: First Runner-Up, 2025 CMU Carnival Booth Awards
+      </p>
+    </section>
+
+    <!-- BOOTH DESCRIPTION -->
+    <section class="project-description">
+
+      <h2>Project Description</h2>
+
+      <p>
+        Every spring, Carnegie Mellon University organizations compete
+        in Spring Carnival to create the most impressive booth: a
+        full-scale, immersive structure designed and constructed by
+        students. These booths go far beyond traditional displays,
+        incorporating architectural construction, elaborate scenery,
+        sculptural elements, painting, lighting, and electrical systems
+        into cohesive, walk-through environments.
+      </p>
+
+      <p>
+        The Asian Student Association's 2025 booth was a two-story
+        structure inspired by K-Pop Demon Hunters. Nearly every aspect
+        of the building, from its wall panels and flooring to its
+        painted set pieces, electrical systems, and safety considerations,
+        was planned, built, and coordinated by members of the ASA
+        Carnival Booth team.
+      </p>
+
+        </section>
+
+    <!-- BOOTH WALKTHROUGH VIDEO -->
+    <section class="booth-video-section">
+
+      <h2>ASA 2025 Booth Walkthrough</h2>
+
+      <video class="booth-video" controls playsinline preload="metadata">
+        <source src="ASA2026Booth.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+        Please try opening this page in another browser.
+      </video>
+
+      <p class="booth-video-caption">
+        Video originally taken from the booth's Instagram and subsequently
+        modified by me.
+      </p>
+
+    </section>
+
+    <!-- BEHIND THE SCENES -->
+    <section class="booth-bts-section">
+
+      <h2>Behind the Scenes</h2>
+
+      <div class="booth-gallery">
+
+        <img
+          src="images/boothBTS1.png"
+          alt="Behind-the-scenes construction of the 2025 ASA Carnival Booth"
+          loading="lazy"
+        >
+
+        <img
+          src="images/boothBTS2.png"
+          alt="ASA Carnival Booth construction and scenic fabrication"
+          loading="lazy"
+        >
+
+        <img
+          src="images/boothBTS3.png"
+          alt="Behind-the-scenes work on the two-story ASA Carnival Booth"
+          loading="lazy"
+        >
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
