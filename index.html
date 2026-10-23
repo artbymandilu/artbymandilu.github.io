@@ -14,7 +14,78 @@
       margin-bottom: 1.5rem;
     }
 
-   
+   /* NAVIGATION BAR */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f0f0f0; /* Light gray for consistency */
+      position: relative;
+      z-index: 1000;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      max-height: 200px;
+      pointer-events: auto;
+    }
+
+    .dropdown-content a {
+  padding: 1rem 1.5rem;
+  background-color: #fff099;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffe956;
+}
+
+  </style>
+</head>
+<body>
 
   <!-- NAVIGATION BAR -->
   <nav>
